@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.drawing.DrawView
+        android:id="@+id/draw_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_dark_blue"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btn_red"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_orange"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorOrange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_red" />
+
+    <Button
+        android:id="@+id/btn_yellow"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorYellow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_orange" />
+
+    <Button
+        android:id="@+id/btn_lemon"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorLemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yellow" />
+
+    <Button
+        android:id="@+id/btn_green"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lemon" />
+
+    <Button
+        android:id="@+id/btn_dark_green"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorDarkGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_green" />
+
+    <Button
+        android:id="@+id/btn_blue"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dark_green" />
+
+    <Button
+        android:id="@+id/btn_dark_blue"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorDarkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_blue" />
+
+    <Button
+        android:id="@+id/btn_purple"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorPurple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dark_blue" />
+
+    <Button
+        android:id="@+id/btn_lilac"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorLilac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_purple" />
+
+    <Button
+        android:id="@+id/btn_pink"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorPink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lilac" />
+
+    <Button
+        android:id="@+id/btn_wight"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorWight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pink" />
+
+    <Button
+        android:id="@+id/btn_gray"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_wight" />
+
+    <Button
+        android:id="@+id/btn_black"
+        android:layout_width="@dimen/btnSize"
+        android:layout_height="@dimen/btnSize"
+        android:background="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/btn_clean"
+            android:layout_width="@dimen/btnSize"
+            android:layout_height="@dimen/btnSize"
+            android:background="@drawable/ic_clear_foreground" />
+
+        <ImageButton
+            android:id="@+id/btn_point"
+            android:layout_width="@dimen/btnSize"
+            android:layout_height="@dimen/btnSize"
+            android:background="@drawable/ic_point_foreground" />
+
+        <ImageButton
+            android:id="@+id/btn_line"
+            android:layout_width="@dimen/btnSize"
+            android:layout_height="@dimen/btnSize"
+            android:background="@drawable/ic_line_foreground" />
+
+        <ImageButton
+            android:id="@+id/btn_curve"
+            android:layout_width="@dimen/btnSize"
+            android:layout_height="@dimen/btnSize"
+            android:background="@drawable/ic_curve_foreground" />
+
+        <ImageButton
+            android:id="@+id/btn_square"
+            android:layout_width="@dimen/btnSize"
+            android:layout_height="@dimen/btnSize"
+            android:background="@drawable/ic_square_foreground" />
+
+        <ImageButton
+            android:id="@+id/btn_polygon"
+            android:layout_width="@dimen/btnSize"
+            android:layout_height="@dimen/btnSize"
+            android:background="@drawable/ic_polygon_foreground" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
